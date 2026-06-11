@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shree Hari Palace | Luxury Event Venue</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--black:#0f0f0f;
+--bronze:#b08d57;
+--beige:#e8dcc8;
+--offwhite:#f8f5f0;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:var(--offwhite);
+color:#222;
+overflow-x:hidden;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,15,15,.95);
+padding:18px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+
+.logo{
+font-family:'Cinzel',serif;
+font-size:28px;
+font-weight:700;
+color:var(--bronze);
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:var(--bronze);
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-family:'Cinzel',serif;
+font-size:70px;
+color:white;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:22px;
+color:#ddd;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:var(--bronze);
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 10%;
+}
+
+.section-title{
+font-family:'Cinzel',serif;
+font-size:42px;
+text-align:center;
+color:var(--black);
+margin-bottom:20px;
+}
+
+.section-sub{
+text-align:center;
+max-width:800px;
+margin:auto;
+margin-bottom:50px;
+}
+
+.about{
+background:white;
+}
+
+.services{
+background:var(--beige);
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h3{
+color:var(--bronze);
+margin-bottom:15px;
+}
+
+.gallery{
+background:white;
+}
+
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery-grid img{
+width:100%;
+height:280px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.why{
+background:var(--black);
+color:white;
+}
+
+.why .section-title{
+color:var(--bronze);
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.feature{
+background:#1a1a1a;
+padding:25px;
+border-left:4px solid var(--bronze);
+border-radius:10px;
+}
+
+.contact{
+background:var(--beige);
+text-align:center;
+}
+
+.contact-box{
+max-width:700px;
+margin:auto;
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,.1);
+}
+
+footer{
+background:var(--black);
+color:white;
+text-align:center;
+padding:25px;
+}
+
+.whatsapp{
+position:fixed;
+right:25px;
+bottom:25px;
+background:#25D366;
+color:white;
+padding:15px 25px;
+border-radius:50px;
+text-decoration:none;
+font-weight:600;
+box-shadow:0 10px 25px rgba(0,0,0,.2);
+z-index:999;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:45px;
+}
+
+nav ul{
+display:none;
+}
+
+.section-title{
+font-size:32px;
+}
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">Shree Hari Palace</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#why">Why Us</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+
+<div class="hero-content">
+<h1>SHREE HARI PALACE</h1>
+
+<p>Celebrate Life's Most Precious Moments In Luxury & Elegance</p>
+
+<a href="#contact" class="btn">Book Your Event</a>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2 class="section-title">Welcome To Shree Hari Palace</h2>
+
+<p class="section-sub">
+A premium destination for weddings, receptions, engagements,
+birthday celebrations and corporate gatherings. Our venue
+combines elegance, comfort and hospitality to create unforgettable experiences.
+</p>
+
+</section>
+
+<section class="services" id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="service-grid">
+
+<div class="card">
+<h3>Luxury Weddings</h3>
+<p>Grand wedding celebrations with stunning arrangements.</p>
+</div>
+
+<div class="card">
+<h3>Engagement Ceremonies</h3>
+<p>Elegant setups for your beautiful beginning.</p>
+</div>
+
+<div class="card">
+<h3>Reception Events</h3>
+<p>Celebrate your new journey in style.</p>
+</div>
+
+<div class="card">
+<h3>Birthday Parties</h3>
+<p>Memorable celebrations for all age groups.</p>
+</div>
+
+<div class="card">
+<h3>Corporate Events</h3>
+<p>Professional venue for meetings and gatherings.</p>
+</div>
+
+<div class="card">
+<h3>Catering Support</h3>
+<p>Delicious food arrangements through trusted partners.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="gallery" id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="gallery-grid">
+
+<img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80">
+
+<img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=800&q=80">
+
+</div>
+
+</section>
+
+<section class="why" id="why">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="features">
+
+<div class="feature">
+<h3>Prime Location</h3>
+<p>Located on Pratapgarh-Raebareli Road.</p>
+</div>
+
+<div class="feature">
+<h3>Spacious Venue</h3>
+<p>Comfortable space for large gatherings.</p>
+</div>
+
+<div class="feature">
+<h3>Elegant Ambience</h3>
+<p>Premium atmosphere with luxury appeal.</p>
+</div>
+
+<div class="feature">
+<h3>Dedicated Support</h3>
+<p>Professional assistance for every event.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="contact-box">
+
+<h3>Shree Hari Palace</h3>
+
+<br>
+
+<p>
+📍 Pratapgarh - Raebareli Rd,<br>
+Pure Ojha, Uttar Pradesh 230002
+</p>
+
+<br>
+
+<p>📞 +91 XXXXX XXXXX</p>
+
+<br>
+
+<p>Book your wedding, reception or special event today.</p>
+
+<br>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="btn">
+Book Now On WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Shree Hari Palace. All Rights Reserved.
+</footer>
+
+<a href="https://wa.me/91XXXXXXXXXX" class="whatsapp">
+WhatsApp Book Now
+</a>
+
+</body>
+</html>
